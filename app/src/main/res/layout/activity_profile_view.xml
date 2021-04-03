@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapps"
+    tools:context="com.example.businesscardreader.ProfileViewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/txtdashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Detail"
+            android:textColor="#FFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdashboard"
+            android:layout_marginTop="6dp"
+            android:text="Contact Detail"
+            android:textColor="#52BAFF"
+            android:textSize="14sp" />
+        <!--<ImageView-->
+        <!--android:id="@+id/person"-->
+        <!--android:layout_width="62dp"-->
+        <!--android:layout_height="62dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:src="@drawable/person" />-->
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+            <TextView
+                android:id="@+id/label_name"
+                android:text="@string/profile_creator_form_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40px" />
+            <TextView
+                android:id="@+id/label_job_title"
+                android:text="@string/profile_creator_form_job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_view_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40px" />
+            <TextView
+                android:id="@+id/label_company"
+                android:text="@string/profile_creator_form_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_view_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40px" />
+            <TextView
+                android:id="@+id/label_telephone"
+                android:text="@string/profile_creator_form_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_view_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40px" />
+            <TextView
+                android:id="@+id/label_email"
+                android:text="@string/profile_creator_form_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_view_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40px" />
+
+                <Button
+                    android:id="@+id/return_to_list_button"
+                    android:text="@string/profile_viewer_return_to_list_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+</LinearLayout>

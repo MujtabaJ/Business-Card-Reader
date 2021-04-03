@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.businesscardreader.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/cameraReaderActivity"
+        android:name="com.example.businesscardreader.CameraReaderActivity"
+        android:label="activity_camera_reader"
+        tools:layout="@layout/activity_camera_reader" />
+    <activity
+        android:id="@+id/connectToApi"
+        android:name="com.example.businesscardreader.ConnectToApi"
+        android:label="activity_connect_to_api"
+        tools:layout="@layout/activity_connect_to_api" />
+    <activity
+        android:id="@+id/profileCreatorActivity"
+        android:name="com.example.businesscardreader.ProfileCreatorActivity"
+        android:label="activity_profile_creator"
+        tools:layout="@layout/activity_profile_creator" />
+    <activity
+        android:id="@+id/profileListActivity"
+        android:name="com.example.businesscardreader.ProfileListActivity"
+        android:label="activity_profile_list"
+        tools:layout="@layout/activity_profile_list" />
+    <activity
+        android:id="@+id/profileViewActivity"
+        android:name="com.example.businesscardreader.ProfileViewActivity"
+        android:label="activity_profile_view"
+        tools:layout="@layout/activity_profile_view" />
+    <activity
+        android:id="@+id/settings2"
+        android:name="com.example.businesscardreader.Settings"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+    <activity
+        android:id="@+id/connectToApi2"
+        android:name="com.example.businesscardreader.ConnectToApi"
+        android:label="activity_connect_to_api"
+        tools:layout="@layout/activity_connect_to_api" />
+</navigation>
